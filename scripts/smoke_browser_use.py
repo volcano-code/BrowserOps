@@ -6,10 +6,9 @@ import argparse
 import asyncio
 import os
 
+from browserops_core.browser_use_adapter import create_agent
 from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.openai import OpenAIProvider
-
-from browserops_core.browser_use_adapter import create_agent
 
 
 async def main() -> None:

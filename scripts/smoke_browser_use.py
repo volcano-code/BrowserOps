@@ -25,6 +25,9 @@ async def main() -> None:
             "Set BROWSEROPS_MODEL_NAME, BROWSEROPS_MODEL_BASE_URL and "
             "BROWSEROPS_MODEL_API_KEY before running this paid smoke test."
         )
+    assert model_name is not None
+    assert base_url is not None
+    assert api_key is not None
 
     provider = OpenAIProvider(base_url=base_url, api_key=api_key)
     llm = OpenAIChatModel(model_name, provider=provider)

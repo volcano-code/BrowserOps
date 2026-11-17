@@ -1,9 +1,9 @@
 from importlib.metadata import PackageNotFoundError
 from unittest.mock import patch
 
-import pytest
-
 from browserops_core import upstream
+
+import pytest
 
 
 def test_upstream_pin_is_explicit() -> None:

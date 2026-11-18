@@ -19,9 +19,12 @@
 
 ## Phase 2 — Demo SaaS and OpsBench
 
-- [ ] Build resettable CRM/ticketing demo application.
-- [ ] Add deterministic seed data and task fixtures.
-- [ ] Add independent task graders and held-out split.
+- [x] Build resettable FastAPI CRM/ticketing demo application.
+- [x] Add deterministic seed data and initial task fixtures.
+- [x] Add idempotent follow-up creation and API tests.
+- [x] Add initial OpsBench task contract validator.
+- [ ] Expand fixtures to the planned 130 tasks and add independent graders/held-out split.
+- [ ] Verify locally and freeze updated uv.lock.
 
 ## Phase 3 — backend and durable runtime
 

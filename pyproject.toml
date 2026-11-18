@@ -42,7 +42,7 @@ target-version = "py312"
 select = ["E", "F", "I", "UP", "B"]
 
 [tool.ruff.lint.isort]
-known-first-party = ["browserops_core"]
+known-first-party = ["browserops_core", "browserops_demo"]
 
 [tool.pyright]
 pythonVersion = "3.12"

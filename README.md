@@ -40,6 +40,21 @@ not a sandbox. Do not run untrusted tasks or expose host credentials to that pro
 The controlled Playwright executor and isolated sandbox are planned as separate components;
 they are not implemented in this foundation commit.
 
+## Demo SaaS (Phase 2 in progress)
+
+A deterministic FastAPI CRM/ticketing fixture is available:
+
+```bash
+uv run python -m browserops_demo
+```
+
+The service binds to `127.0.0.1:3100`. It exposes seeded CRM customers, tickets, and
+idempotent follow-up creation for local development. Its reset endpoint is test-only and
+must not be exposed to untrusted networks.
+
+Initial OpsBench fixtures live in `evals/opsbench/`. This is a seed contract, not the
+complete 130-task benchmark.
+
 ## Roadmap
 
 - Phase 0: repository, provenance, scope, development conventions.

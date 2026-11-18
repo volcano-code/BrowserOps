@@ -1,0 +1,18 @@
+[
+  {
+    "task_id": "CRM-READ-001",
+    "category": "read_only_lookup",
+    "instruction": "Find customer CUST-0005 and report its priority and owner.",
+    "risk": "R0",
+    "expected": {"customer_id": "CUST-0005", "priority": "high", "owner": "sales-2"},
+    "grader": "customer_lookup"
+  },
+  {
+    "task_id": "CRM-WRITE-001",
+    "category": "approved_write",
+    "instruction": "Create one follow-up task for CUST-0005 titled Schedule customer follow-up.",
+    "risk": "R2",
+    "expected": {"customer_id": "CUST-0005", "title": "Schedule customer follow-up", "count": 1},
+    "grader": "followup_exists"
+  }
+]
